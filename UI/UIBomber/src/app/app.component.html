@@ -1,0 +1,46 @@
+<div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">BomberTools</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:8080/" target="_blank">API</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+  <div class="email-form-container">
+    <h1>Email Bomber Tool</h1>
+    <label for="to">To:</label>
+    <input placeholder="kundan@gmail.com" type="email" id="to" [(ngModel)]="to" />
+  
+    <label for="subject">Subject:</label>
+    <input placeholder="Your subject" type="text" id="subject" [(ngModel)]="subject" />
+  
+    <label for="count">Count:</label>
+    <input type="number" id="count" [(ngModel)]="count" />
+  
+    <button class="send-button" (click)="sendEmails()">Send Emails</button>
+  
+    <!-- Display the response messages -->
+    <!-- <div class="response-message" *ngIf="responseMessage">{{ responseMessage }}</div> -->
+  </div>
+</div>
